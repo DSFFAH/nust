@@ -1,0 +1,494 @@
+/* 导航 */
+.carousel .item {
+	height: 500px;
+	background-color: #777;
+}
+
+.carousel-inner>.item>img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	height: 500px;
+}
+
+/* 导航项的底下指示条，并添加过渡动画*/
+.underline-bar {
+	height: 2px;
+	width: 0%;
+	margin: 0 auto;
+	background-color: #1CD76A;
+	transition: width 1.5s;
+	/**/
+	-webkit-transition: width 1.5s;
+	/* Safari */
+}
+
+/* 鼠标经过导航项的时候显示过渡动画*/
+li:hover>.underline-bar {
+	width: 100%;
+
+}
+
+/* 选中状态，指示条显示*/
+.active>.underline-bar {
+	width: 100%;
+
+}
+
+
+body {
+
+	margin-left: 57px;
+	margin-right: 57px;
+	background-color: #000000;
+}
+
+
+
+.navbar-fixed-top {
+	background-color: #000000;
+	border: #000000 solid 1px;
+}
+
+.container-fluid {
+	background-color: #000000;
+	border: #000000 solid 1px;
+	width: 100%;
+	height: 100PX;
+}
+
+.navbar-header {
+	background-color: #000000;
+	padding-left: 120px;
+	border: #000000 solid 1px;
+	padding-top: 22px;
+}
+
+#bs-example-navbar-collapse-1 {
+	border: #000000 solid 1px;
+	padding-right: 120px;
+	font-size: 25px;
+	padding-top: 23px;
+}
+
+#tow {
+	width: 100%;
+	height: 800px;
+	background-color: #000000;
+	/* margin-left: 75px;
+				margin-bottom: 67px; */
+}
+
+#tq {
+	width: 1200px;
+	height: 78px;
+	/* text-align: center; */
+	font-size: 4.1vw;
+	color: #FFFFFF;
+	
+}
+#tq span{
+	text-align: ;
+}
+#tt{
+	width: 100%;
+	height: 137px;
+	background-color: #000000;
+}
+#img{
+	width: 100%; 
+	height: 480px; 
+	background-color: #F5F5F5;
+}
+
+/**
+			 * What We Offer
+			 */
+			#three {
+				width: 100%;
+				height: 900px;
+				background-color: #000000;
+				/* margin-left: 75px; */
+			}
+			
+			#rz {
+				margin-left: 20%;
+				font-family: "arial black";
+				font-size: 4.5vw;
+				background: -webkit-linear-gradient(left, #1CD79A 1%, #566AD1 25%, #AB66FF 20%);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				margin-top: 63px;
+				
+			}
+			.row{
+				width: 100%; 
+				height: 530px; 
+			}
+			.ro{
+				width: 400px; 
+				height: 500px; 
+				margin-left: 0px; 
+				float: left;
+			}
+			#trz {
+				font-family: arial black;
+				color: #FF754A;
+				font-size: 1.5vw;
+				margin-top: 169px;
+				height: 39px; 
+				width: 500px; 
+				font-size: 2.5vw;"
+			}
+			#trz2{
+				height: 96px; 
+				width: 500px; 
+				color: #FFFFFF;
+				 margin-top: 80px; 
+				 font-family: eras medium itc; 
+				 font-size: 1.4vw;
+			}
+			.diantu{
+				width: 360px; 
+				height: 520px;  
+				float: left;
+				margin-left: 200px; 
+				
+			}
+			#dian{
+				width: 500px; 
+				height: 500px; 
+				margin-left: 60px; 
+				padding-top: 85px;"
+			}
+			#dian img{}
+			
+			/* Tournament */
+			#four {
+				width:  100%;
+				height: 900px;
+				background-color: #000000;
+				margin-left: 0px;
+			}
+			#fuors{
+				width: 100%; 
+				height: 530px; 
+				background-color: #000000;
+			}
+			#fuores{
+				width: 500px; 
+				height: 500px; 
+				float: left;
+			}
+			#tourz {
+				font-family: arial black;
+				color: #EB54BC;
+				font-size: 2.5vw;
+				margin-top: 136px;
+				height: 39px; 
+				width: 200px;
+			}
+			#tourz2{
+				height: 56px; 
+				color: #FFFFFF; 
+				font-size: 1.3vw; 
+				margin-top: 50px; 
+				font-family: eras medium itc;
+			}
+			#fourtu{
+				width: 500px; 
+				height: 520px; 
+				 margin-left: 90px; 
+				 float: left;
+			}
+			#fourt{
+				width: 500px; 
+				height: 500px; 
+				
+			}
+			
+			/**
+			 * Multi-Token Wagering
+			 */
+			#five {
+				width:  100%;
+				height: 900px;
+				background-color: #000000;
+				
+			}
+			#fives{
+				width: 100%; 
+				height: 530px; 
+			}
+			#fi{
+				
+				width: 550px; 
+				height: 500px; 
+				background-color: #000000; 
+				float: left;"
+			}
+			#mz {
+				font-family: arial black;
+				color: #AB66FF;
+				font-size: 2.5vw;
+				margin-top: 136px;
+				height: 39px; 
+				width: 500px;
+			}
+			#fiv{
+				height: 56px; 
+				color: #FFFFFF; 
+				margin-top: 40px; 
+				font-family: eras medium itc; 
+				font-size: 1.5vw;
+			}
+			#fivetu{
+				width: 500px; 
+				height: 520px;  
+				float: left;"
+			}
+			#fivet{
+				width: 500px; 
+				height: 500px; 
+				background-color: #000000; 
+				margin-left: 60px;
+			}
+			
+			/* NFT Game Scene */
+			#six {
+				width: 100%;
+				height: 900px;
+				background-color: #000000;
+			
+			}
+			#sixs{
+				width: 100%; 
+				height: 530px; 
+				background-color: #000000;
+			}
+			#sixes{
+				width: 500px; 
+				height: 500px; 
+				background-color: #000000; 
+				margin-left: 0px; 
+				float: left;
+			}
+			#sxz {
+				font-family: arial black;
+				color: #1CD79A;
+				font-size: 2.5vw;
+				margin-top: 136px;
+				height: 39px; 
+				width: 500px; 
+			}
+			#sxz2{
+				height: 140px; 
+				color: #FFFFFF; 
+				margin-top: 20px; 
+				font-family: eras medium itc; 
+				font-size: 1.5vw;
+			}
+			#sixtu{
+				width: 560px; 
+				height: 520px; 
+				background-color: #000000; 
+				margin-left: 0px; 
+				float: left;
+				margin-top: 50px;
+			}
+			#sixt{
+				width: 500px; 
+				height: 500px; 
+				background-color: #000000; 
+				margin-left: 140px; 
+			}
+			
+			/* NFT Game Scene */
+			#seven {
+				width: 100%;
+				height: 900px;
+				background-color: #000000;
+				
+			}
+			#sevens{
+				width: 100%; 
+				height: 530px; 
+				background-color: #000000;
+			}
+			#sevenes{
+				width: 500px; 
+				height: 500px; 
+				background-color: #000000; 
+				float: left;
+			}
+			#ssz {
+				font-family: arial black;
+				color: #566AD1;
+				font-size: 2.5vw;
+				margin-top: 136px;
+				height: 39px; 
+				width: 500px; 
+			}
+			#ssz2{
+				height: 140px; 
+				color: #FFFFFF; 
+				margin-top: 50px; 
+				font-family: eras medium itc; 
+				font-size: 1.5vw;
+				
+			}
+			#seventu{
+				width: 500px; 
+				height: 520px;
+				background-color: #000000; 
+				margin-left: 70px; 
+				float: left; 
+				margin-top: -5PX;
+			}
+			#sevent{
+				width: 500px; 
+				height: 500px; 
+				background-color: #000000; 
+				margin-left: 60px;
+			}
+			
+			/* Tokenomics */
+			#eight {
+				width: 100%;
+				height: 900px;
+				background-color: #000000;
+				
+			}
+			#eights{
+				width: 100%; 
+				height: 758px;
+			}
+			#ez {
+				font-family: arial black;
+				color: #675FDA;
+				font-size: 2.5wv;
+				margin-top: 136px;
+				margin-left: 500px;
+				height: 80px; 
+				width: 360px;
+			}
+			#q{
+				height: 705.20px;
+				width: 1200px; 
+				border-left:1px solid rgba(86, 106, 209, 1);
+				border-right:1px solid rgba(86, 106, 209, 1);
+				padding-left: 100px; 
+				padding-top: 150px;
+			}
+			
+			#Farming{
+				width: 431.85px; 
+				height: 179.18px; 
+				background-color: rgba(57, 148, 254, 0.15);
+				border: 2px solid rgba(57, 148, 254, 0.15); 
+				float: left; 
+				vertical-align: middle;
+				margin-left: 50px; 
+				margin-right: 50px;
+				margin-bottom: 30px;  
+				-webkit-box-shadow: 0 0 5px #FFFFFF;
+			}
+			
+			hr{
+				background-color: rgba(86, 106, 209, 1);
+				border: none;
+				height: 1px;
+				
+			}
+			hr.jian{
+			filter: alpha(opacity=100,finishopacity=0,style=3);
+			 width="80%" ;
+			 color=#987cb9 ;
+			 size=3;
+			 width: 1000px;
+			 
+			}
+			
+			hr.jian2{
+			filter: alpha(opacity=100,finishopacity=0,style=3);
+			 width="80%" ;
+			 color=#987cb9 ;
+			 size=3;
+			 width: 195.9px;
+			 
+			}
+			
+			hr.jian3{
+			filter: alpha(opacity=100,finishopacity=0,style=3);
+			 width=8% ;
+			 color=#987cb9 ;
+			 size=3;
+			width: 715.42px;
+			height: 1px;
+			
+			 
+			}
+			hr.jian4{
+				filter: alpha(opacity=100,finishopacity=0,style=3);
+				 width=10px ;
+				 color=#987cb9 ;
+				 size=3;
+				width: 715.42px;
+				height: 1px;
+			}
+			xian{
+			filter: alpha(opacity=100,finishopacity=0,style=3);
+			 width="80%" ;
+			 color=#987cb9 ;
+			 size=3;
+			width: 348.61px;
+			
+			
+			 
+			}
+			
+			
+			#nine{
+				width: 100%;
+				height: 900px;
+				background-color: #000000;
+				
+				margin-top: 300px;
+			}
+			
+			#ten{
+				width: 100%;
+				height: 900px;
+				background-color: #000000;
+				
+			}
+			.huan{
+				width: 25px;
+				height: 25px;
+				border-radius: 50px;
+				border: 1px solid rgba(28, 215, 154, 1);
+				padding: 5px;
+				box-sizing: border-box;
+				background-color: rgba(28, 215, 154, 1);
+				background-clip: content-box;
+			}
+			
+			.huan2{
+				width: 25px;
+				height: 25px;
+				border-radius: 50px;
+				border: 1px solid rgba(171, 102, 255, 1);
+				padding: 5px;
+				box-sizing: border-box;
+				background-color: rgba(171, 102, 255, 1);
+				background-clip: content-box;
+			}
+			#tenoen{
+				width: 100%;
+				height: 800px;
+				margin-top: 139px;
+				background-color: #000000;
+			}
+			
+					

@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<!-- 在移动端不缩放 -->
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<title>导航条</title>
+		<!-- 新 Bootstrap 核心 CSS 文件 -->
+
+		<link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+		<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+
+		<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		<script type="text/javascript">
+
+		</script>
+		<style type="text/css">
+			/**
+		 * nav
+		 */
+			body {
+
+				width: 1440px;
+				height: 10000px;
+				background-color: #000000;
+
+			}
+
+			a {
+				font-size: 18px;
+
+				font-family: "eras medium itc";
+			}
+
+			a_hover:hover {
+				clear: none;
+				color: #1CD76A;
+
+			}
+
+			/* 导航项的底下指示条，并添加过渡动画*/
+			.underline-bar {
+				height: 2px;
+				width: 0%;
+				margin: 0 auto;
+				background-color: #1CD76A;
+				transition: width 1.5s;
+				/**/
+				-webkit-transition: width 1.5s;
+				/* Safari */
+			}
+
+			/* 鼠标经过导航项的时候显示过渡动画*/
+			li:hover>.underline-bar {
+				width: 100%;
+
+			}
+
+			/* 选中状态，指示条显示*/
+			.active>.underline-bar {
+				width: 100%;
+
+			}
+
+			#big {
+				width: 0%;
+				height: 100px;
+
+			}
+
+			#togglemenu {
+				background-color: #000000;
+			}
+
+			.container-fluid {
+				height: 100px;
+				margin-left: 67px;
+
+
+			}
+
+			.btn {
+				border-radius: 30px;
+				background: #566AD1;
+				width: 158px;
+				height: 32px;
+				font-size: 18px;
+				color: #F5F5F5;
+				line-height: 32px;
+			}
+
+			/**
+			 * The Most Crediable Poker Game Online .
+			 */
+
+			#tow {
+				width: 1440px;
+				height: 800px;
+				background-color: #000000;
+				margin-left: 75px;
+				margin-bottom: 67px;
+			}
+
+			#tq {
+				width: 1240px;
+				height: 78px;
+				/* text-align: center; */
+				font-size: 60px;
+				color: #FFFFFF;
+				margin-left: 52px;
+			}
+
+			/**
+			 * What We Offer
+			 */
+			#three {
+				width: 1440px;
+				height: 900px;
+				background-color: #000000;
+				margin-left: 75px;
+			}
+
+			#rz {
+				margin-left: 458px;
+				font-family: "arial black";
+				font-size: 50px;
+				background: -webkit-linear-gradient(left, #1CD79A 1%, #566AD1 25%, #AB66FF 20%);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				margin-top: 63px;
+
+			}
+
+			#trz {
+				font-family: arial black;
+				color: #FF754A;
+				font-size: 25px;
+				margin-top: 169px;
+			}
+
+
+
+			/* Tournament */
+			#four {
+				width: 1440px;
+				height: 900px;
+				background-color: #000000;
+				margin-left: 75px;
+			}
+
+			#tourz {
+				font-family: arial black;
+				color: #EB54BC;
+				font-size: 25px;
+				margin-top: 136px;
+			}
+
+			/**
+			 * Multi-Token Wagering
+			 */
+			#five {
+				width: 1440px;
+				height: 900px;
+				background-color: #000000;
+				margin-left: 75px;
+			}
+
+			#mz {
+				font-family: arial black;
+				color: #AB66FF;
+				font-size: 25px;
+				margin-top: 136px;
+			}
+
+			/* NFT Game Scene */
+			#six {
+				width: 1440px;
+				height: 900px;
+				background-color: #000000;
+				margin-left: 75px;
+			}
+
+			#sxz {
+				font-family: arial black;
+				color: #1CD79A;
+				font-size: 25px;
+				margin-top: 136px;
+			}
+
+			/* NFT Game Scene */
+			#seven {
+				width: 1440px;
+				height: 900px;
+				background-color: #000000;
+				margin-left: 75px;
+			}
+
+			#ssz {
+				font-family: arial black;
+				color: #566AD1;
+				font-size: 25px;
+				margin-top: 136px;
+			}
+
+			/* Tokenomics */
+			#eight {
+				width: 1440px;
+				height: 900px;
+				background-color: #000000;
+				margin-left: 75px;
+			}
+
+			#ez {
+				font-family: arial black;
+				color: #675FDA;
+				font-size: 25px;
+				margin-top: 136px;
+				margin-left: 500px;
+			}
+
+		
+		</style>
+	</head>
+	<body>
+		<div id="big">
+			<!-- nav -->
+			<nav class="navbar navbar-fixed-top ">
+				<!-- 定义反白导航条 -->
+				<div class="navbar  container-fluid navbar-inverse navbar-static-top" style="background-color: #000000;">
+
+					<div class="navbar-header" style="background-color: #000000;">
+
+						<a class="navbar-brand " href="#">
+							<img src="img/nav/Image.png" />
+						</a>
+
+
+					</div>
+
+
+
+					<div id="" style="width:1800; height: 14.6px; background-color: #000000;">
+
+					</div>
+					<!-- 做隐藏菜单 -->
+					<div class="" id="togglemenu">
+						<!-- 菜单项 -->
+						<ul class="nav navbar-nav ">
+
+
+
+							<li>
+								<a href="#" class="a_hover"><span style="color: #FFFFFF;">Tokenomics</span></a>
+								<div class="underline-bar"></div>
+							</li>
+							<li>
+								<a href="#" class="fond">Roadmap</a>
+								<div class="underline-bar"></div>
+							</li>
+							<li>
+								<a href="#">Trade</a>
+								<div class="underline-bar"></div>
+							</li>
+							<li><a href="#">Marketplace</a>
+								<div class="underline-bar"></div>
+							</li>
+							<li><a href="#">Source</a>
+								<div class="underline-bar"></div>
+							</li>
+							<li><a href="#">Whitepaper</a>
+								<div class="underline-bar"></div>
+							</li>
+							<li><a href="#"><img src="img/nav/telegram%20icon.png" /></a>
+
+							</li>
+							<li><a href="#"><img src="img/nav/discord%20logo.png" /></a>
+
+							</li>
+							<li><a href="#"><img src="img/nav/Twitter%20Logo.png" /></a>
+
+							</li>
+							<li>
+								<a class="btn btn-default navbar-collapse" href="#" role="button">Connect Wallet</a>
+							</li>
+						</ul>
+
+						<!-- <button class="btn btn-default navbar-btn">按钮</button> -->
+
+
+
+
+					</div>
+
+
+				</div>
+			</nav>
+			<!-- The Most Crediable Poker Game Online . -->
+			<div id="tow">
+				<div id="tt" style="width: 1440px;height: 137px;background-color: #000000;">
+
+				</div>
+				<div id="tq">
+					<span>The Most Crediable Poker Game Online .</span>
+				</div>
+				<div style="width: 1300px; height: 122px; background-color: #000000;">
+
+				</div>
+				<div id="img" style="width: 1300px; height: 480px; background-color: #F5F5F5;">
+
+				</div>
+
+
+			</div>
+			<!-- What We Offer -->
+			<div id="three">
+				<div id="rz">
+					<span>What We Offer</span>
+				</div>
+				<div id="" style="width: 1313px; height: 97px; background-color: #000000;">
+
+				</div>
+				<div id="" style="width: 1340px; height: 530px; background-color: #000000;">
+					<div id="" style="width: 300px; height: 500px; background-color: #000000; margin-left: 140px; float: left;">
+						<div id="trz" style="height: 39px; width: 200px;">
+							<span>Shuffle Cards
+								Decentralized</span>
+						</div>
+						<div id="" style="height: 96px; color: #FFFFFF; margin-top: 40px; font-family: eras medium itc;">
+							Lorem ipsum dolor sit amet,consectetur
+							adipiscing elit. Mauris tortor,augue
+							interdum purus donec facilisis enim.
+						</div>
+					</div>
+					<div id="" style="width: 760px; height: 520px; background-color: #000000; margin-left: 140px; float: left;">
+						<div id="" style="width: 500px; height: 500px; background-color: #000000; margin-left: 60px;">
+							<img src="img/shuffle%20cards-01%202.png" />
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			<!-- Tournament -->
+			<div id="four">
+				<div id="" style="width: 1340px; height: 530px; background-color: #000000;">
+					<div id="" style="width: 300px; height: 500px; background-color: #000000; margin-left: 140px; float: left;">
+						<div id="tourz" style="height: 39px; width: 200px;">
+							<span>Tournament</span>
+						</div>
+						<div id="" style="height: 56px; color: #FFFFFF; margin-top: 10px; font-family: eras medium itc;">
+							Regularly Tournaments with various
+							rewards, including big bonuses, NFT etc..
+						</div>
+					</div>
+					<div id="" style="width: 760px; height: 520px; background-color: #000000; margin-left: 140px; float: left;">
+						<div id="" style="width: 500px; height: 500px; background-color: #000000; margin-left: 60px;">
+							<img src="img/tournament-01%201.png" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Multi-Token Wagering -->
+			<div id="five">
+				<div id="" style="width: 1340px; height: 530px; background-color: #000000;">
+					<div id="" style="width: 300px; height: 500px; background-color: #000000; margin-left: 140px; float: left;">
+						<div id="mz" style="height: 39px; width: 400px;">
+							<span>Multi-Token Wagering</span>
+						</div>
+						<div id="" style="height: 56px; color: #FFFFFF; margin-top: 20px; font-family: eras medium itc;">
+							Nuts Poker can deploy other tokens on
+							SOL easily.
+						</div>
+					</div>
+					<div id="" style="width: 760px; height: 520px; background-color: #000000; margin-left: 140px; float: left;">
+						<div id="" style="width: 500px; height: 500px; background-color: #000000; margin-left: 60px;">
+							<img src="img/token_画板%201%202.png" />
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- NFT Game Scene -->
+			<div id="six">
+				<div id="" style="width: 1340px; height: 530px; background-color: #000000;">
+					<div id="" style="width: 300px; height: 500px; background-color: #000000; margin-left: 140px; float: left;">
+						<div id="sxz" style="height: 39px; width: 400px;">
+							<span>NFT Game Scene</span>
+						</div>
+						<div id="" style="height: 140px; color: #FFFFFF; margin-top: 20px; font-family: eras medium itc;">
+							Nuts Poker will distribute limited supplied
+							NFTs for the special game room through
+							the marketplace. They have special style
+							onscene, table and cards. $NUTS will be
+							used during the sales and auctions.
+						</div>
+					</div>
+					<div id="" style="width: 760px; height: 520px; background-color: #000000; margin-left: 140px; float: left;">
+						<div id="" style="width: 500px; height: 500px; background-color: #000000; margin-left: 60px;">
+							<img src="img/nft-game%201.png" />
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- No Recharge -->
+			<div id="seven">
+				<div id="" style="width: 1340px; height: 530px; background-color: #000000;">
+					<div id="" style="width: 300px; height: 500px; background-color: #000000; margin-left: 140px; float: left;">
+						<div id="ssz" style="height: 39px; width: 400px;">
+							<span>No Recharge</span>
+						</div>
+						<div id="" style="height: 140px; color: #FFFFFF; margin-top: 20px; font-family: eras medium itc;">
+							You can buyin with your Blockchain
+							Wallet directly. Don't worry about
+							financial security. Complete
+							decentralized transaction.
+						</div>
+					</div>
+					<div id="" style="width: 760px; height: 520px; background-color: #000000; margin-left: 140px; float: left;">
+						<div id="" style="width: 500px; height: 500px; background-color: #000000; margin-left: 60px;">
+							<img src="img/no-recharge-01%201.png" />
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Tokenomics -->
+			<div id="eight">
+				<div id="" style="width: 1403px; height: 758px;">
+					<div id="ez" style="height: 80px; width: 360px;">
+						<span>Tokenomics</span>
+					</div>
+					<hr />
+				</div>
+			</div>
+		</div>
+		
+	</body>
+</html>
